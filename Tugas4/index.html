@@ -1,0 +1,38 @@
+<html>
+<head>
+   <title>Pengecekan Nilai</title>
+</head>
+<body>
+    <h2>Pengecekan Nilai</h2>
+    <div>
+        <label><b>Masukkan NIM:</b>
+        <input type="number" id="num"></label>
+    </div>
+    <div>
+    <label><b>Masukkan Nilai Mata Kuliah:</b>
+        <input type="number" id="matkul"></label>
+    </div>
+    <button onclick="Cek()">Cek Nilai</button>
+    <p>Hasil: <span id="hasil"></span></p>
+
+
+   <script>
+       function Cek() {
+           let Nilai = document.getElementById("matkul").value;
+           if (Nilai >= 80 && Nilai <= 100) {
+               document.getElementById("hasil").innerHTML = "A";
+           } else if (Nilai >= 70 && Nilai <= 79) {
+               document.getElementById("hasil").innerHTML = "B";
+           } else if (Nilai >= 60 && Nilai <= 69) {
+               document.getElementById("hasil").innerHTML = "C";
+           } else if (Nilai >= 50 && Nilai <= 59) {
+               document.getElementById("hasil").innerHTML = "D";
+           } else if (Nilai >= 0 && Nilai <= 49) {
+               document.getElementById("hasil").innerHTML = "E";
+           } else {
+               document.getElementById("hasil").innerHTML = "ERROR";
+           }
+       }
+   </script>
+</body>
+</html>
