@@ -1,0 +1,63 @@
+body {
+    background-color: #000000;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.judul {
+    color: black;
+}
+
+.container {
+    margin-top: 100px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 30%;
+}
+
+.head-conteiner {
+    text-align: center;
+}
+
+.Mahasiswa {
+    text-align: center;
+    margin-top: 20px;   
+}   
+
+.list-tugas {
+    text-align: center;
+    margin-top: 20px;   
+}
+
+.list-tugas ul {
+    list-style-type: none;  
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.progress h2 {
+    text-align: center;
+}
+
+.progress ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.progress ul li {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+}
