@@ -72,3 +72,4 @@ echo "Versi Sistem: " . VERSION . "<br>";
    $data = null;
    var_dump($data);
 ?>
+<a href="../Tugas6/Tugas1/latihan_nilai.php">Nilai Mahasiswa</a>
