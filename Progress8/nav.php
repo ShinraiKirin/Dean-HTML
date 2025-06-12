@@ -20,8 +20,10 @@
                        <a class="nav-link" href="lihat_transaksi.php">Lihat Pesanan</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link" href="hapus.php">Hapus Buku</a>
+                       <a class="nav-link" href="tambah_pelanggan.php">Tambah Pelanggan</a>
                    </li>
+                       </li class="nav-item">
+                   <li><a class="nav-link" href="lihat_pelanggan.php">Lihat Pelanggan</a></li>
                </ul>
            </div>
        </div>
