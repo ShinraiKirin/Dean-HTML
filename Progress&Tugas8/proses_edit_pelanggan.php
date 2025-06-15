@@ -8,7 +8,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $telepon = $_POST['Telepon'];
     $email = $_POST['Email'];
 
-    // Siapkan query update
     $stmt = $conn->prepare("UPDATE pelanggan SET Nama=?, Alamat=?, Telepon=?, Email=? WHERE ID=?");
     $stmt->bind_param("ssssi", $nama, $alamat, $telepon, $email, $id);
 

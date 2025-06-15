@@ -12,8 +12,6 @@
    <div class="container mt-4">
        <h2>Daftar Buku</h2>
 
-
-       <!-- Form Pencarian -->
        <form method="get" class="row g-3 mb-4">
            <div class="col-md-5">
                <label for="judul" class="form-label">Cari Berdasarkan Judul</label>
@@ -32,7 +30,6 @@
        </form>
 
 
-       <!-- Tabel Daftar Buku -->
        <table class="table table-striped">
            <thead>
                <tr>

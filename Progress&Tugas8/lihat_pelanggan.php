@@ -1,7 +1,6 @@
 <?php
-include 'koneksi_db.php'; // Koneksi database
+include 'koneksi_db.php';
 
-// Query untuk mengambil semua data pelanggan
 $query = "SELECT * FROM pelanggan ORDER BY ID ASC";
 $result = $conn->query($query);
 ?>
@@ -19,7 +18,6 @@ $result = $conn->query($query);
    <div class="container mt-4">
        <h2>Daftar Pelanggan</h2>
 
-       <!-- Tabel Daftar Pelanggan -->
        <table class="table table-striped">
            <thead>
                <tr>

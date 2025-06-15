@@ -1,7 +1,6 @@
 <?php
-include 'koneksi_db.php'; // Koneksi database
+include 'koneksi_db.php';
 
-// Query untuk menampilkan data pesanan beserta nama pelanggan dan total harga
 $query = "
    SELECT Pesanan.ID AS Pesanan_ID, Pelanggan.Nama AS Nama_Pelanggan, Pesanan.Tanggal_Pesanan, Pesanan.Total_Harga
    FROM Pesanan
@@ -23,7 +22,6 @@ $result = $conn->query($query);
    <div class="container mt-4">
        <h2>Daftar Pesanan</h2>
 
-       <!-- Tabel Daftar Pesanan -->
        <table class="table table-striped">
            <thead>
                <tr>
@@ -31,7 +29,7 @@ $result = $conn->query($query);
                    <th>Nama Pelanggan</th>
                    <th>Tanggal Pesanan</th>
                    <th>Total Harga</th>
-                   <th>Hapus</th> <!-- Tambah kolom aksi -->
+                   <th>Hapus</th> 
                </tr>
            </thead>
            <tbody>
@@ -50,7 +48,6 @@ $result = $conn->query($query);
        </table>
    </div>
 
-   <!-- Bootstrap JS -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

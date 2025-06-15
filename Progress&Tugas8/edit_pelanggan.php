@@ -8,7 +8,6 @@ if (!isset($_GET['id'])) {
 
 $id = intval($_GET['id']);
 
-// Ambil data pelanggan berdasarkan ID
 $stmt = $conn->prepare("SELECT * FROM pelanggan WHERE ID = ?");
 $stmt->bind_param("i", $id);
 $stmt->execute();

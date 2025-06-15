@@ -1,12 +1,11 @@
 <?php
+include 'session.php';
 include 'koneksi_db.php';
 include 'nav.php';
 
 
 $id = $_GET['id'] ?? 0;
 
-
-// Ambil data buku berdasarkan ID
 $stmt = $conn->prepare("SELECT * FROM Buku WHERE ID = ?");
 $stmt->bind_param("i", $id);
 $stmt->execute();
